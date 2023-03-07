@@ -2,9 +2,44 @@
 <html>
     <head>
         <title>Custom_list</title>
+        <link rel="stylesheet" href="custom_list.css">
     </head>
     <body>
-        <p>Je suis la page de liste client</p>
-        <a href="index.html">Accueil</a>
+        <tr><h1>Liste des clients</h1></tr>
+        <table>
+            <thead>
+                <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Société</th>
+                <th>Pays</th>
+                <th>Date de création</th>
+                <th>ID</th>
+                <th>Modification</th>
+                </tr>
+            </thead>
+            <tr>
+              <td>Bosco</td>
+              <td>Benjamin</td>
+              <td>benjy.bosco@gmail.com</td>
+              <td>Polytech</td>
+              <td>France</td>
+              <td>07/03/22</td>
+              <td>b20008543</td>
+              <td><a href="custom_modification.html">Modifier</a></td>
+            </tr>
+            <tr>
+              <td>Deuxième</td>
+              <td>Personne</td>
+              <td>example@email.com</td>
+              <td>Polytech</td>
+              <td>France</td>
+              <td>07/03/22</td>
+              <td>xxxxxxx</td>
+              <td><a href="custom_modification.html">Modifier</a></td>
+            </tr>
+          </table>
+        <a href="custom_create.html">Ajouter un client</a>
     </body>
 </html>
