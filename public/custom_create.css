@@ -1,0 +1,65 @@
+/* Style du conteneur */
+body{
+    display: flex; /*Création d'un conteneur flexible*/
+    justify-content:center; /*Aligné les inputs par rapport au centre*/
+    flex-direction: columns; /*Ranger les inputs par colonnes*/
+    align-items: center; /* Les aligné entre eux*/
+    font-family: 'Times New Roman'; /*Police du texte*/
+    background-size: 100vh;/*L'arrière plan rempli la fenêtre de navigation*/
+    background-color: #0789A9; /* Couleur de l'arrière plan */
+  }
+  /* Style du formulaire */
+  form {
+    position: fixed; /*Ne bouge pas*/
+    width: 500px; /*Largeur du formulaire*/
+    height: 500px; /*Hauteur du formulaire*/
+    top: 7.5%; /* Centrer le formulaire*/
+    background-color: #fff; /* Background blanc*/
+    padding: 30px 50px; /*Marge du formaulaire par rapport aux inputs*/
+    border-radius: 10px; /* Faire un congé dans le coin du formulaire */
+  }
+  /* Style du titre de haut niveau */
+  form h1{
+    color: #0789A9; /*Couleur du texte*/
+    text-align:center; /*Aligné au centre*/
+  }
+  /* Style du paragraphe */
+  form p{
+    text-align: center; /*Aligné au centre*/
+    color: #0eb5de; /*Couleur du texte*/
+  }
+  /* Placement des inputs */
+  form .inputs {
+    display: flex; /*Contenu flexible*/
+    flex-flow: row wrap; /*Rangement des items*/
+    justify-content: space-between; /*Espace entre les items*/
+  }
+  /* Style des inputs obligatoires */
+  form .inputs input[type='date'], input[type='tel'], input[type='text'], input[type='email'], input[type='password']{
+    padding: 15px;/*Marge*/
+    border: none;/*Bordure*/
+    border-radius: 5px;/*Conge aux coins*/
+    background-color: #f2f2f2;/*Couleur du fond*/
+    outline: none; /*Pas de bordure à la selection de l'input*/
+    margin-bottom: 15px;/*Marge du dessous de chaque inputs*/
+  }
+  /* Style de la date à recopier sinon mauvaise mise en forme de la date (copier coller du dessus)*/
+  form .inputs input[type='date']{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  /* Style du bouton submit */
+  form button{
+    padding: 15px 25px; /*Marge*/
+    border-radius: 5px; /*Congé au coin*/
+    border:none; /*Pas de bordure*/
+    font-size: 15px; /*Taille de fonte utilisé par le texte*/
+    color: #fff; /*Couleur du texte*/
+    background-color: #0989A9; /*Couleur de l'arrière-plan*/
+    outline:none; /*Pas de bordure à la selection de l'input*/
+    cursor:pointer; /*Mise en forme du curseur lorsqu'il est sur le bouton*/
+  }

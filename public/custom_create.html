@@ -2,9 +2,25 @@
 <html>
     <head>
         <title>custom_create</title>
+        <link rel="stylesheet" href="custom_create.css">
     </head>
     <body>
-        <p>Je suis la page de création client</p>
-        <a href="index.html">Accueil</a>
+        <form action="index.html">
+            <h1>Création client</h1>
+            <div class="inputs">
+                <!-- placeholder = ce qu'il y a écrit en fond
+                required = champs qui doivent obligatoirement être rempli par l'utilisateur
+                pattern = format à respecter-->
+                <input type="text" placeholder="Nom" required>
+                <input type="text" placeholder="Prénom" required>
+                <input type="tel" placeholder="Numéro de téléphone" pattern="[0-9]{10}">
+                <input type="text" placeholder="Date de naissance" onfocus="(this.type='date')">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Mot de passe" required>
+            </div>
+            <div align="center">
+                <button type="submit">Créer un compte</button>
+            </div>
+        </form>
     </body>
 </html>
