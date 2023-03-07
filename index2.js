@@ -8,8 +8,8 @@ function main(){
         const currentDate = new Date();        
         console.log("page called at" + currentDate);
         res.send("Hello world nous sommes le " + currentDate);
-    });
-
+    }); 
+    
     app.listen(port, function(){
         console.log(`Example app listening on port ${port}`);
     });

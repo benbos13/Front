@@ -4,9 +4,7 @@ const port = 3000; // Port sur lequel le serveur web est lancé
 
 function main(){
 
-    app.get("/", (req, res) => { 
-       res.send("Hello World!");
-    });
+    app.use(express.static("public"));
 
     app.listen(port, function(){
         console.log(`Example app listening on port ${port}`);
